@@ -24,3 +24,24 @@ Se resuelve creando un archivo de configuracion de Typescript (tsconfig.json)
         "esModuleInterop": true
     }
 } ```
+
+
+FIRST principles:
+FAST: unit test should be fast (faster tests - faster feedback)
+ISOLATED/INDEPENDENT: should be isolated from: other tests, external environment 
+    (no shared state with other tests, the order in which tests runshould not matter)
+REPEATABLE: same result with the same input. 
+    Random/Date values => we will ofter mock these
+    Test that writes to a database: It should always clean up
+SELF VALIDATING
+    after the thest is finished, the result should be: pass or fail.
+THOROUGH:
+    cover all the cases/path/scenarios
+    happy cases, bad paths, edge cases
+    Invalid output
+    Large values
+    100% code coverage -> not a great indicator :) 
+
+Para testear errores, hay que envolverlo que queremos testear dentro de otra funcion
+y usar los matchers: toThrow() y toThrowError('message')
+
