@@ -45,3 +45,13 @@ THOROUGH:
 Para testear errores, hay que envolverlo que queremos testear dentro de otra funcion
 y usar los matchers: toThrow() y toThrowError('message')
 
+Doubles in practice: 
+TDD styles/schools: London and Chicago(Detroit)
+
+**Chicago:** 
+a unit: a collection of pieces 
+low focus on mocks
+
+**London:**
+a unit: a class
+heavy use of mocks
